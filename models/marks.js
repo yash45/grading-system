@@ -6,30 +6,38 @@ class Marks{
     }
     isValid(){
         let valid = true;
-        this.student === null? 'please enter a student' : true;
+        this.student === null? 'please enter a student name' : true;
         typeof(this.mark !== 'number')? true: 'please enter a number'; 
 
         return valid
     }
     grade(){
-        let mark = this.mark 
-        let score = 0;
+        let mark = this.mark;
+        let score;
         switch(mark){
             case mark < 50:
-               return  score = 'F';
+                 score = 'F';
+                 break;
             case mark >= 50 && mark <60:
-                return (score = 'E');
+                score = 'E'
+                break;
             case mark >= 60 && mark < 70:
-                return (score = 'D');
+                score = 'D'
+                break;
             case mark >= 70 && mark < 80:
-                return (score = 'C');
+                score = 'C'
+                break;
             case mark >= 50 && mark < 90:
-                return (score = 'B'); 
+                score = 'B'
+                break;
             case mark >=90 && mark <=100:
-                return (score = 'A');
+                score = 'A'
+                break;
             case mark > 100:
-                return (score = 'mark cannot exceed 100 ');
-            default: 'enter grade'
+                score = 'mark cannot exceed 100 '
+                break;
+            default: 
+                score = 'enter grade'
                  break;
         }
         return score
