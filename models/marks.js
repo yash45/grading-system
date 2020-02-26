@@ -32,9 +32,6 @@ class Marks{
             case mark >=90 && mark <=100:
                 score = 'A'
                 break;
-            case mark > 100:
-                score = 'mark cannot exceed 100 '
-                break;
             default: 
                 score = 'enter grade'
                  break;
