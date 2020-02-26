@@ -9,8 +9,14 @@
   "scripts": {
     "test": "jest",
     "coveralls" : "jest --coverage && cat ./coverage/lcov.info | coveralls",
-    "jest-coverage": "npm run test -- --coverage"
+    "jest-coverage": "npm run test --"
   },
+"jest":{
+  
+    "collectCoverage":true
+  
+},
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/johnakon/Grading-system-circleci.git"
