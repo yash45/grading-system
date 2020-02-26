@@ -12,9 +12,8 @@ class Marks{
         return valid
     }
     grade(){
-        let mark = this.mark;
-        let score;
-        switch(mark){
+        let score = null;
+        switch(true){
             case mark < 50:
                  score = 'F';
                  break;
